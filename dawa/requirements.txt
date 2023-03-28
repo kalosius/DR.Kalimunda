@@ -1,0 +1,24 @@
+functionalities of the dawa project
+login and logout
+index page
+stock
+sales report
+stock listing> products
+receits for purchasing  
+
+'''
+modeling an object called products
+1. Category
+2. Product name
+3. The total quantity received
+4.  Batch number
+5. Issued Quality(sold sofar) and quality received
+
+
+modeling sale
+1. Item old
+2. Quality sold
+3. Issuied to/ buyer
+4. Unit Price
+5. Ammount received
+'''
