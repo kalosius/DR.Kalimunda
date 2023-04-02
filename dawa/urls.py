@@ -8,5 +8,11 @@ urlpatterns =[
     path('', auth_views.LoginView.as_view(template_name = 'products/login.html'), name = 'login' ),
     path('logout/', auth_views.LogoutView.as_view(template_name = 'products/logout.html'), name = 'logout' ),
     # this route is for buying [BUY ITEM]
-    path('index/<int:product_id>', views.product_detail, name = 'product_detail')
+    path('index/<int:product_id>', views.product_detail, name = 'product_detail'),
+    path('issue_item/<str:pk>/', views.issue_item, name = 'issue_item'),
+    path('add_to_stock/<str:pk>/', views.add_to_stock, name = 'add_to_stock'),
+    path('reciept', views.reciept, name='reciept'), 
+
 ]
+# views match request to templates
+

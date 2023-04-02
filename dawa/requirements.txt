@@ -1,10 +1,11 @@
 functionalities of the dawa project
 login and logout
 index page
-stock
+stock updating
 sales report
-stock listing> products
-receits for purchasing  
+stock listing> Category, products
+receits for purchasing 
+ 
 
 '''
 modeling an object called products
