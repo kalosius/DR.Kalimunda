@@ -26,17 +26,18 @@
           <ul class="nav navbar-nav ml-auto">
            {% if user.is_authenticated%}
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'home' %}">HOME</a>
+                <a class="nav-link" href="{% url 'index' %}">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'home'%}">RECEIPTS</a>
+                <a class="nav-link" href="{% url 'reciept'%}">RECEIPTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'home'%}">ALL SALES</a>
+                <a class="nav-link" href="{% url 'all_sales'%}">ALL SALES</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'logout'%}">LOGOUT</a>
               </li>
+
             {% endif %}
           </ul>
      </nav>

@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 # Create your models here.
 #model means description of the space on the database where we store things
 #models are python classes
@@ -31,6 +32,7 @@ class Sale(models.Model):
     amount_received = models.IntegerField(default = 0, null = False, blank = True)
     issued_to = models.CharField(max_length=50, null = True, blank = True)
     unit_price = models.IntegerField(default = 0, null = False, blank = True)
+    # user = models.ForeignKey(User, on_delete = models.CASCADE)
     #date = models.DateTimeField(auto_now_add = True)
     
     #the method below calculates the total sale
@@ -51,6 +53,8 @@ class Sale(models.Model):
     
     def __str__(self):
         return self.item.item_name
+    
+    
 
 
     

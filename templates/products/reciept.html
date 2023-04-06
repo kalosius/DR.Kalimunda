@@ -12,7 +12,7 @@
       <h2>Total Price :  UGX{{ sale.get_total }}</h2>
       <div style="flex: 1">
         <h6 class="card-text">Change Collected:  UGX{{ sale.get_change }}</h6>
-        <a href="">
+        <a href="{% url 'reciept_detail' sale.id %}">
           <input
             type="submit"
             value="Final Receipt"

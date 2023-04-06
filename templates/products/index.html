@@ -40,6 +40,13 @@
                 class="btn btn-secondary btn"
                 type="button"
             /></a></td>
+            <td><a href="{% url 'delete_item' product.id %}"
+              ><input
+                type="submit"
+                value="DELETE ITEM"
+                class="btn btn-secondary btn"
+                type="button"
+            /></a></td>
       </tr>
     </tbody>
     {% endfor %}

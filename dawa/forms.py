@@ -7,7 +7,7 @@ from .models import *
 class AddForm(ModelForm):
     class Meta:
         model = Product
-        fields = ['issued_quantity']
+        fields = ['received_quantity']
     
     # modeling a form basing on our the model inorder to record the sales
 
