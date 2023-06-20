@@ -48,7 +48,8 @@ class Sale(models.Model):
     
     # Other fields are added here
     def get_vat(self):
-        pass
+        vat = self.get_total() * 0.18
+        return float(vat)
     
     
     def __str__(self):

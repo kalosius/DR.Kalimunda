@@ -19,6 +19,7 @@
                   <td class="text-xs-center"><strong>Item Quantity</strong></td>
                   <td class="text-xs-right"><strong>Total Bill(Ugx)</strong></td>
                   <td class="text-xs-right"><strong>Amount Paid(Ugx)</strong></td>
+                  <td class="text-xs-right"><strong>tax(Ugx)</strong></td>
                   <td class="text-xs-right">
                     <strong>Total change(UgX)</strong>
                   </td>
@@ -26,11 +27,12 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>{{receipt.item| title}}</td>
-                  <td class="text-xs-center">{{receipt.quantity }}</td>
-                  <td class="text-xs-center">Ug{{receipt.get_total | title}}</td>
-                  <td class="text-xs-right">Ugx{{ receipt.amount_received }}</td>
-                  <td class="text-xs-right">Ugx{{ receipt.get_change }}</td>
+                  <td>{{reciept.item| title}}</td>
+                  <td class="text-xs-center">{{reciept.quantity }}</td>
+                  <td class="text-xs-center">Ug{{reciept.get_total | title}}</td>
+                  <td class="text-xs-right">Ugx{{ reciept.amount_received }}</td>
+                  <td class="text-xs-right">Ugx{{ reciept.get_vat }}</td>
+                  <td class="text-xs-right">Ugx{{ reciept.get_change }}</td>
                 </tr>
               </tbody>
             </table>

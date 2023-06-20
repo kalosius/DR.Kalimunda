@@ -9,6 +9,7 @@
       <h6 class="card-text">Item : {{sale.item}}</h6>
       <h6 class="card-text">Amount Paid:  UGX{{ sale.amount_received }}</h6>
       <h6 class="card-text">Quantity: {{sale.quantity }}</h6>
+      <h6 class="card-text">VAT: {{sale.get_vat }}</h6>
       <h2>Total Price :  UGX{{ sale.get_total }}</h2>
       <div style="flex: 1">
         <h6 class="card-text">Change Collected:  UGX{{ sale.get_change }}</h6>

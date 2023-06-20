@@ -1,0 +1,35 @@
+{% extends 'products/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+
+
+
+
+  <h1>Accessing About Dr kalimunda</h1>
+
+  <h2>Medicine</h2>
+  <div id="demo"> <a href="{% url 'index' %}">Click here</a> for our medicine </div>
+
+  <h2>Class (.demo)</h2>
+  <div class="demo">Access me by class (1)</div>
+  <div class="demo">Access me by class (2)</div>
+
+  <h2>Tag (article)</h2>
+  <article>Access me by tag (1)</article>
+  <article>Access me by tag (2)</article>
+
+  <h2>Query Selector</h2>
+  <div id="demo-query">Access me by query</div>
+
+  <h2>Our Pharmacies</h2>
+  <div id="demo-query"><a href="">For Pharmacies</a></div>
+
+  <h2>Query Selector All</h2>
+  <div class="demo-query-all">Access me by query all (1)</div>
+  <div class="demo-query-all">Access me by query all (2)</div>
+
+
+
+{% endblock %}
