@@ -7,11 +7,11 @@ import os
 # BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-import environ
-env = environ.Env()
+# import environ
+# env = environ.Env()
 
 
-environ.Env.read_env()
+# environ.Env.read_env()
 
 
 
@@ -85,12 +85,8 @@ WSGI_APPLICATION = 'kalimunda.wsgi.application'
 # #sqlite
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'kalimunda',
-        'USER': 'postgres',
-        'PASSWORD': 'alosiuskas',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR , 'db.sqlite3')
     }
 }
 
@@ -100,15 +96,6 @@ DATABASES = {
 #     'default': dj_database_url.parse(env('DATABASE_URL'))
 
 # }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -148,10 +135,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'productionfiles')
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'static')
-# ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'productionfiles')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
 # MEDIA_URL = 'images/'  
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
